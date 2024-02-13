@@ -16,7 +16,7 @@ const Events = () => {
              <div className=' flex flex-row  flex-wrap'>
                 <div className=' flex-1'>
                   {upcomingEvent.events.map((event) => (
-                    <div key={event.id} className=' p-4 cursor-pointer max-w-[280px] rounded-lg text-black hover:text-white font-poppins font-semibold feature-card'>
+                    <div key={event.id} className=' p-4 cursor-pointer max-w-[280px] rounded-lg text-black hover:text-white font-poppins font-semibold z-50 feature-card'>
                      <p>{event.date}</p>
                      <p>{event.event}</p>
                    </div>                  

@@ -2,9 +2,6 @@ import React from 'react';
 import styles, { layout } from "../style";
 import { features } from "../constants";
 import Button from './Button';
-
-
-
 const AboutContent =  ({icon, text, title, index}) => (
   <div className={`flex flex-row p-4 rounded-[20px]   ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
     <div className={`w-[40px] h-[40px] rounded-full ${styles.flexCenter} bg-white`}>

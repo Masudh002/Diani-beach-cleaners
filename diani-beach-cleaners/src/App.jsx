@@ -2,8 +2,6 @@ import React from 'react'
 import styles from './style';
 import { About, Events, Footer, GetInvolved, Home, Membership, Navbar } from './components';
 import ContactForm from './components/ContactForm';
-import InquiryForm from './components/InquiryForm';
-
 const App = () => {
   return (
     <div className=' bg-slate-100 w-full overflow-hidden'>
@@ -20,7 +18,6 @@ const App = () => {
       <Events/>
       <Membership/>
       <ContactForm/>
-      <InquiryForm/>
       <Footer/>
     </div>
   )

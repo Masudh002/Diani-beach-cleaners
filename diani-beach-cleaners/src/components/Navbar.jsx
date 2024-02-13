@@ -20,10 +20,10 @@ const [toggle, setToggle] = useState(false);
         </ul>
         <div className=' sm:hidden flex flex-1 justify-end items-center'>
          <img src={toggle?close:menu } alt="icons" className=' w-[24px] h-[24px] object-contain' onClick={() => setToggle((prev) =>!prev)} />
-          <div className={`${!toggle? "hidden": "flex"}  p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl bg-slate-200`}>
+          <div className={`${!toggle? "hidden": "flex"}  p-4 absolute top-32 right-0 left-0 mx-4 my-2 min-w-[140px] rounded-xl bg-discount-gradient`}>
            <ul className=' list-none flex justify-end items-start flex-1 flex-col'>
              {navLinks.map((nav, index) => (
-                <li key={nav.id} className={` font-poppins font-medium cursor-pointer text-[14px] ${index === navLinks.length-1? "mr-0" : "mr-4"}
+                <li key={nav.id} className={` font-poppins font-medium cursor-pointer text-[16px] ${index === navLinks.length-1? "mb-0" : "mb-2"}
                   ${active ===  nav.title ? "text-white" : "text-black"}`} onClick={() => setActive(nav.title)}>
                    <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
