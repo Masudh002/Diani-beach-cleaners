@@ -60,30 +60,30 @@ export const features = [
 
 export const organizers = [
   {
-    id:'Og1',
+    id:'1',
     image:pc,
-    name:"Masud",
+    name:"Masud Chireya",
     title:"Chairman",
     contact: "0716216447"
   },
   {
-    id:'Og1',
+    id:'1',
     image:pc,
-    name:"Masud",
+    name:"Masud Chireya",
     title:"Chairman",
     contact: "0716216447"
   },
   {
-    id:'Og1',
+    id:'1',
     image:pc,
-    name:"Masud",
+    name:"Masud Chireya",
     title:"Chairman",
     contact: "0716216447"
   },
   {
-    id:'Og1',
+    id:'1',
     image:pc,
-    name:"Masud",
+    name:"Masud Chireya",
     title:"Chairman",
     contact: "0716216447"
   }

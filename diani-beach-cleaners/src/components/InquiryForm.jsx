@@ -1,16 +1,42 @@
 import React from 'react'
-import Button from './Button'
-import styles, { layout } from "../style";
+import styles from "../style";
 import close from '../assets/close.svg'
+import { useState } from 'react'
 
 const InquiryForm = ( {onClick}) => {
-  /*const[formData, setFormData] = useState({
+  const [successMessage, setSuccessMessage] = useState(null);
+  const[formData, setFormData] = useState({
     fullname:"",
     email:"",
     phoneNo:"",
-    checked:""
+    isChecked:false,
+    isJoined:false,
+    isClicked:false
    }
- )*/
+ )
+ function handleChange(event) {
+  const { name, value, type, checked } = event.target;
+
+  if (type === "checkbox") {
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        isChecked: name === "isChecked" ? checked : false,
+        isJoined: name === "isJoined" ? checked : false,
+        isClicked: name === "isClicked" ? checked : false
+      };
+    });
+  } else {
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      [name]: value
+    }));
+  }
+}
+
+function handleSubmit(event){
+  event.preventDefault();
+}
   return (
     <div className=' bg-blue-gradient w-full m-4 sm:mx-[10%] rounded-lg p-4 flex flex-col content-center items-center'>
       <div className=' '>
@@ -21,18 +47,18 @@ const InquiryForm = ( {onClick}) => {
         <p className={`${styles.paragraph}  mt-2`}>Do you want to join us as a volunteer, partner or sponsor? <br /> Kindly fill in the form below</p>
       </div>
       <div>
-         <form className=' bg-cyan-400 p-4 rounded-lg' >
-             <input type="text" name='fullname' className=' border-[1px] border-black m-2 p-2  text-xl outline-none rounded-[4px] sm:text-center' placeholder='Full Name' required/> 
-             <input type="email" className='border-[1px] border-black m-2 p-2  text-xl outline-none rounded-[4px] sm:text-center' placeholder='Email address' required />
-             <input type='text' className='border-[1px] border-black m-2 p-2  text-xl outline-none rounded-[4px] sm:text-center' placeholder='Phone no:' required />
+         <form className=' bg-cyan-400 p-4 rounded-lg' onSubmit={handleSubmit} >
+             <input type="text" name='fullname' value={formData.fullname} onChange={handleChange} className={`${styles.input}`} placeholder='Full Name' required/> 
+             <input type="email" name='email' value={formData.email} onChange={handleChange} className={`${styles.input}`} placeholder='Email address' required />
+             <input type='text' name='phoneNo' value={formData.phoneNo} onChange={handleChange} className={`${styles.input}`} placeholder='Phone no:' required />
              <p className=' '>Join us as:</p> 
-             <input type="checkbox"  style={{ transform: 'scale(1.5)', borderRadius:'50%' }} /> <span className=' text-[20px] ml-2'>Volunteering</span> <br />
-             <input type="checkbox"  style={{ transform: 'scale(1.5)' , borderRadius:'50%' }} /> <span  className=' text-[20px] ml-2'> Sponsorship</span> <br />
-             <input type="checkbox"  style={{ transform: 'scale(1.5)' , borderRadius:'50%' }} /> <span  className=' text-[20px] ml-2'>Partnership</span>
+             <input type="checkbox" name='isChecked' checked={formData.isChecked} onChange={handleChange}  style={{ transform: 'scale(1.5)'}} /> <span className=' text-[20px] ml-2'>Volunteering</span> <br />
+             <input type="checkbox" name='isJoined' checked={formData.isJoined}  onChange={handleChange}  style={{ transform: 'scale(1.5)'}} /> <span  className=' text-[20px] ml-2'> Sponsorship</span> <br />
+             <input type="checkbox" name='isClicked' checked={formData.isClicked} onChange={handleChange}  style={{ transform: 'scale(1.5)'}} /> <span  className=' text-[20px] ml-2'>Partnership</span>
              <p className=' my-2'>Tell us about your needs</p>
              <textarea name="" id="" className=' w-full max-h-[120px] min-h-[60px] outline-none p-2 rounded-md mb-2 text-lg' placeholder='Type your message'></textarea>
              <div className=' text-center'>
-             <Button  children="Send Message" />
+              <button className={`${styles.button}`}>Send Message</button>
              </div>
           </form>
       </div>

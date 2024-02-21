@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import close from '../assets/close.svg'
 import Button from './Button'
 import email from '../assets/email.svg'
+import styles from '../style'
 
 const ContactForm = () => {
+    const [showContactForm, setShowContactForm] =useState(true);
     function submitForm( event){
         event.preventDefault();
         alert('submitting');
     }
-    const [showContactForm, setShowContactForm] =useState(true);
   return (
     <div className='' id='contact' >
         <div className='text-center m-8 font-poppins font-bold xs:text-[32px] text-[20px] text-black xs:leading-[50px] leading-[40px]'>
@@ -27,10 +28,10 @@ const ContactForm = () => {
              </div>
              <div className=' '> 
                  <form className='' onSubmit={submitForm}>
-                     <input type="text" className=' border-[1px] border-black m-2 p-2 w-full text-xl outline-none rounded-[4px] sm:text-center' placeholder='First and Last Name' required/> 
-                     <input type="email" className='border-[1px] border-black m-2 p-2 w-full text-xl outline-none rounded-[4px] sm:text-center' placeholder='Email address' required /> 
-                     <textarea name="" className='border-[1px] border-black m-2 p-2 w-full text-xl outline-none rounded-[4px] sm:text-center max-h-[120px]' placeholder='Message' id=""></textarea>
-                     <Button children="Send Message" />
+                     <input type="text" className={`${styles.input} w-full`} placeholder='First and Last Name' required/> 
+                     <input type="email" className={`${styles.input} w-full`} placeholder='Email address' required /> 
+                     <textarea name="" className={`${styles.input} w-full max-h-[120px]`} placeholder='Message' id=""></textarea>
+                     <button className={`${styles.button}`}>Send Message</button>
                  </form>
              </div>
          </div>       

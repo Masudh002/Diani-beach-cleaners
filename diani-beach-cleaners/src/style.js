@@ -13,6 +13,8 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+    input: " border-[1px] border-black m-2 p-2  text-xl outline-none rounded-[4px] sm:text-center",
+    button:"  bg-orange-500 hover:bg-orange-400  p-4 text-white rounded-lg outline-none font-poppins font-medium"
   };
   
   export const layout = {
