@@ -49,13 +49,13 @@ export const features = [
     id:"do1",
     icon:star,
     title:"Awareness & Sensitization",
-    text: "Sexual Reproductive Health & Rigths SRHR & Mentorship Program",
+    text: "Helping people understand, empathize, and take action to address social problems and make society better.",
   },
   {
     id:"do2",
     icon:star,
     title:"Mentorship Program ",
-    text:"Sexual Reproductive Health & Rigths SRHR & Mentorship Program",
+    text:"Offering guidance and support to community, aiding skill development, goal achievement, and career/life navigation.",
   },
 ]
 
@@ -65,28 +65,28 @@ export const organizers = [
     image:pc,
     name:"Masud Chireya",
     title:"Chairman",
-    contact: "0716216447"
+    contact: "0716216..."
   },
   {
     id:'1',
     image:pc,
     name:"Masud Chireya",
     title:"Chairman",
-    contact: "0716216447"
+    contact: "0716216..."
   },
   {
     id:'1',
     image:pc,
     name:"Masud Chireya",
     title:"Chairman",
-    contact: "0716216447"
+    contact: "0716216..."
   },
   {
     id:'1',
     image:pc,
     name:"Masud Chireya",
     title:"Chairman",
-    contact: "0716216447"
+    contact: "0716216..."
   }
 ]
 
