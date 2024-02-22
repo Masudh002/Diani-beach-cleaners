@@ -24,7 +24,7 @@ const [toggle, setToggle] = useState(false);
            <ul className=' list-none flex justify-end items-start flex-1 flex-col'>
              {navLinks.map((nav, index) => (
                 <li key={nav.id} className={` font-poppins font-medium cursor-pointer text-[16px] ${index === navLinks.length-1? "mb-0" : "mb-2"}
-                  ${active ===  nav.title ? "text-white" : "text-black"}`} onClick={() => setActive(nav.title)}>
+                  ${active ===  nav.title ? "text-white" : " text-dimWhite"}`} onClick={() => setActive(nav.title)}>
                    <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
              ))}

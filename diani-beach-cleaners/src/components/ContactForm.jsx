@@ -6,6 +6,7 @@ import styles from '../style'
 
 const ContactForm = () => {
     const [showContactForm, setShowContactForm] =useState(true);
+    
     function submitForm( event){
         event.preventDefault();
         alert('submitting');

@@ -4,7 +4,7 @@ import image from '../assets/next.jpg';
 
 const Events = () => {
   return (
-    <section id='Event' className='sm:m-4 my-2 rounded-lg pb-4 backphoto'>
+    <section id='Event' className='sm:m-4 my-4 rounded-lg pb-4 backphoto'>
         <h1 className='m-2 font-poppins font-bold xs:text-[32px] text-[20px] text-black xs:leading-[50px] leading-[40px]'>Explore Our Events</h1>
       <div>
         <h1 className=' text-center font-poppins font-semibold xs:text-[24px] text-[16px] text-black xs:leading-[46px] leading-[36px]'>Previous Events</h1>
@@ -12,7 +12,7 @@ const Events = () => {
           <h1 className=' text-center font-poppins font-semibold xs:text-[24px] text-[16px] text-black xs:leading-[46px] leading-[36px]'>Upcoming Events</h1>
          { upcomingEvents.map((upcomingEvent) =>(
            <div className=' p-4'>
-             <h1 className=' font-poppins text-black xs:text-[20px] text-[12px] xs:leading-[40px] leading-[30px] font-bold mb-4'>{upcomingEvent.title}</h1>
+             <h1 className=' font-poppins text-black xs:text-[20px] text-[12px] xs:leading-[40px] leading-[30px] font-bold'>{upcomingEvent.title}</h1>
              <div className=' flex flex-row  flex-wrap'>
                 <div className=' flex-1'>
                   {upcomingEvent.events.map((event) => (

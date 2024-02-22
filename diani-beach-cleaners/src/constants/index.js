@@ -3,6 +3,7 @@ import pc from '../assets/pc.jpeg';
 import twitter from '../assets/twitter.svg';
 import facebook from '../assets/facebook.svg';
 import instagram from '../assets/instagram.svg';
+import whatsapp from '../assets/whatsapp.svg';
 
 
 export const navLinks = [
@@ -133,23 +134,19 @@ export const footerLinks = [
     links: [
       {
         name: "What We  Do",
-        link: "https://www.dybc.com/content/",
+        link: "#",
       },
       {
         name: "How We Work",
-        link: "https://www.dybc.com/how-it-works/",
+        link: "#",
       },       
       {
         name: "Success Stories",
-        link: "https://www.dybc.com/explore/",
-      },
-      {
-        name: "Call-to-Action",
-        link: "https://www.dybc.com/terms-and-services/",
+        link: "#",
       },
       {
         name: "Contact Us",
-        link: "https://www.dybc.com/terms-and-services/",
+        link: "#",
       },
     ],
   },
@@ -157,24 +154,20 @@ export const footerLinks = [
     title: "Community",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.dybc.com/help-center/",
-      },
-      {
         name: "Engagement",
-        link: "https://www.dybc.com/partners/",
+        link: "#",
       },
       {
         name: "Suggestions",
-        link: "https://www.dybc.com/suggestions/",
+        link: "#",
       },
       {
         name: "Blog",
-        link: "https://www.dybc.com/blog/",
+        link: "#",
       },
       {
         name: "Newsletters",
-        link: "https://www.dybc.com/newsletters/",
+        link: "#",
       },
     ],
   },
@@ -183,11 +176,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.dybc.com/our-partner/",
+        link: "#",
       },
       {
         name: "Become a Partner",
-        link: "https://www.dybc.com/become-a-partner/",
+        link: "#",
       },
     ],
   },
@@ -196,19 +189,19 @@ export const footerLinks = [
     links: [
       {
         name: "Twitter",
-        link: "https://www.dybc.com/our-partner/",
+        link: "#",
       },
       {
         name: "Facebook",
-        link: "https://www.dybc.com/become-a-partner/",
+        link: "#",
       },
       {
         name: "WhatsUp",
-        link: "https://www.dybc.com/become-a-partner/",
+        link: "#",
       },
       {
         name: "Instagram",
-        link: "https://www.dybc.com/become-a-partner/",
+        link: "/#",
       },
     ],
   },
@@ -218,21 +211,21 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "#",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "#",
   },
   {
     id: "social-media-3",
     icon: twitter,
-    link: "https://www.twitter.com/",
+    link: "#",
   },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
+    icon: whatsapp,
+    link: "#",
   },
 ];

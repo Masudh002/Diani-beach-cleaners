@@ -42,10 +42,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-         <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+         <p className="font-poppins font-normal text-center sm:text-[18px] text-[14px] leading-[24px] text-white">
            Copyright Ⓒ 2024 DYBC. All Rights Reserved.
          </p>
-         <p className="font-poppins font-normal text-center sm:text-[16px] sm:leading-[20px] text-[12px] leading-[16px] text-white">Designed by <a href="#">Masudh002</a></p>
+         <p className="font-poppins font-normal text-center sm:text-[16px] sm:leading-[20px] text-[12px] leading-[16px] text-white">
+          Designed by <a href="https://masudhportfolio.vercel.app/" target='_blank' className=' text-orange-700 underline'>Masudh002</a></p>
          <div className='flex flex-row md:mt-0 mt-6'>
             {socialMedia.map((social, index) =>(
                 <img src={social.icon} id={social.id} alt="img" className={`w-[21px] h-[21px] object-contain cursor-pointer
